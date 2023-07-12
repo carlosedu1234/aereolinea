@@ -1,0 +1,26 @@
+.navBar-conteiner {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(21, 19, 19, 0.9);
+  padding: 1em 1em;
+  box-sizing: border-box;
+}
+
+.navBar-conteiner a {
+  padding: 1em;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.navBar-conteiner button:hover, a:hover {
+  color: rgb(186, 60, 60);
+}
+
+.navBar-conteiner button {
+  color: white;
+  background: none;
+  margin-right: 1em;
+  font-size: 1em;
+  border: none;
+  cursor:pointer;
+}

@@ -1,0 +1,40 @@
+.fondo-color{
+    background-color: rgb(240, 248, 255,0.5);
+}
+
+.login-oconteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login-oconteiner-form {
+  width: 50vh;
+}
+
+.login-ingreso {
+  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1em;
+  border: none ;
+  border-bottom: solid rgba(81, 81, 87, 0.276);
+}
+
+.login-boton {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  background-color: rgba(0, 213, 255, 0.2);
+}
+
+.login-boton:hover{
+
+transition: 1s;
+transform: scale(1.03);
+background-color: rgba(0, 213, 255, 0.3);
+}
