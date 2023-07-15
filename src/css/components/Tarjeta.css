@@ -1,0 +1,32 @@
+.ciudades-Tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  min-width: 40vh;
+  box-sizing: border-box;
+  margin: 1em 0.4em;
+  padding: 1em;
+  background: linear-gradient(rgb(0, 0, 255,0.1),rgba(168, 147, 147, 0.1));
+  box-shadow: 10px 10px 10px rgb(0, 0, 0,0.2);
+ 
+  border-radius: 20px;
+}
+h2{
+    margin: 0;
+}
+.ciudades-Tarjeta p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ciudades-Tarjeta img {
+  height: 50%;
+  min-height: 40%;
+  width: 100%;
+  margin-bottom: 1em;
+}
+

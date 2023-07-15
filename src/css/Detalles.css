@@ -1,0 +1,29 @@
+.detalles-conteiner {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  background: linear-gradient(rgb(0, 0, 255,0.1),rgba(168, 147, 147, 0.1));
+  box-shadow: 10px 10px 10px rgb(0, 0, 0,0.2);
+ 
+}
+
+.boton-detalles {
+  border: none;
+  width: 40%;
+  background: rgb(38, 211, 38,0.3);
+}
+.boton-detalles:hover {
+    background: rgb(38, 211, 38,0.6);
+}
+
+.boton-cancelar{
+    border: none;
+    width: 40%;
+    background: rgba(255, 18, 1, 0.5);
+}
+
+

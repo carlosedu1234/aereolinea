@@ -15,8 +15,9 @@ const NavBar = () => {
     <div className="navBar-conteiner">
       <div>
         <NavLink to="contenido1">Locaciones</NavLink>
-        <NavLink to="contenido2">Vuelos Disponibles</NavLink>
-        <NavLink to="contenido3">Planes</NavLink>
+        <NavLink to="contenido2">Norte</NavLink>
+        <NavLink to="contenido3">Sur</NavLink>
+        <NavLink to="factura">Factura</NavLink>
       </div>
       <button onClick={login}>Logaut</button>
     </div>

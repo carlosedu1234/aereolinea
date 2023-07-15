@@ -12,8 +12,8 @@ function Login() {
   const recuperar = () => {
     navegacion("/", { replace: true });
 
-    if (usuario !== "" || password !== "") {
-      loguearme();
+    if (usuario !== "" && password !== "") {
+      loguearme("jab");
     } else {
       alert("Debes ingresar usuario y contraseña");
     }

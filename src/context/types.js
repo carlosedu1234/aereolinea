@@ -1,5 +1,5 @@
 const types = {
     login: 'login',
-    logaut: 'logauto',
+    logaut: 'logaut',
 }
 export default types

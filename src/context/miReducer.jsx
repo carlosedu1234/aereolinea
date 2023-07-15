@@ -7,13 +7,15 @@ const MiReducer = (state = {}, action) => {
         case types.login:
             return {
 
-                estado:true
+                estado:true,
+                usuario:action.payload
             }
 
         case types.logaut:
             return {
 
-                estado:false
+                estado:false,
+                usuario:null
             }
         default: return
 

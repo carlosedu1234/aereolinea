@@ -1,7 +1,8 @@
-import React, { useReducer } from "react";
+import React, { useReducer,useState } from "react";
 import Contexto from "./Contexto";
 import miReducer from "./miReducer.jsx";
 import types from "./types";
+import datos from "../datos/datos.js"
 
 const init = () => {
   const valor = localStorage.getItem("estado");
@@ -13,12 +14,14 @@ const init = () => {
 function Provider({ children }) {
   const [logueado, dispatch] = useReducer(miReducer, {}, init);
 
-  const loguearme = () => {
+  const loguearme = (user) => {
     const action = {
       type: types.login,
+      payload:user
     };
     localStorage.setItem("estado", true);
     dispatch(action);
+    
   };
 
   const desloguearme = () => {
@@ -29,6 +32,9 @@ function Provider({ children }) {
     dispatch(action);
   };
 
+  const [ciudades,setCiudades]=useState(datos);
+  const [saldo,setSaldo]=useState(0);
+
   return (
     <>
       <Contexto.Provider
@@ -36,6 +42,9 @@ function Provider({ children }) {
           ...logueado,
           loguearme,
           desloguearme,
+          ciudades,
+          setCiudades,
+          saldo,setSaldo,
         }}
       >
         {children}

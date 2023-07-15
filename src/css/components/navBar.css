@@ -1,8 +1,10 @@
 .navBar-conteiner {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(21, 19, 19, 0.9);
-  padding: 1em 1em;
+  background-color: rgb(21, 19, 19, 0.8);
+  padding: 1.3em 1em;
+  font-size: 1.1em;
+  font-weight: bold;
   box-sizing: border-box;
 }
 
@@ -14,6 +16,7 @@
 
 .navBar-conteiner button:hover, a:hover {
   color: rgb(186, 60, 60);
+  
 }
 
 .navBar-conteiner button {
@@ -21,6 +24,10 @@
   background: none;
   margin-right: 1em;
   font-size: 1em;
+  font-weight: bold;
   border: none;
   cursor:pointer;
 }
+a:active {
+    color: red;
+  }

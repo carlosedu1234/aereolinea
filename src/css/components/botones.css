@@ -1,0 +1,17 @@
+
+.boton-1 {
+    width: 50%;
+    text-decoration: none;
+    padding: 0.5em;
+    color: black;
+    border-radius: 10px;
+    background: rgba(255, 18, 1, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .boton-1:hover {
+      transition: 1s;
+      background: rgba(255, 18, 1, 0.5);
+  }
+

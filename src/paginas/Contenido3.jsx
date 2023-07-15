@@ -1,11 +1,11 @@
 import React from 'react'
-
-function Contenido3() {
+import Informacion from './Informacion'
+function Contenido() {
   return (
     <div>
-        <h1>Contenido 3</h1>
+        <Informacion zona="es"/>
     </div>
   )
 }
 
-export default Contenido3
+export default Contenido

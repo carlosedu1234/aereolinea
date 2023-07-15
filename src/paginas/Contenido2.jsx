@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Informacion from './Informacion'
 function Contenido2() {
   return (
     <div>
-        <h1>Contenido 2</h1>
+        <Informacion zona="no"/>
     </div>
   )
 }
