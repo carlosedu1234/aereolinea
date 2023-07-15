@@ -3,6 +3,7 @@ import Contexto from "./Contexto";
 import miReducer from "./miReducer.jsx";
 import types from "./types";
 import datos from "../datos/datos.js"
+import miReducer2 from "./miReducer2";
 
 const init = () => {
   const valor = localStorage.getItem("estado");
@@ -11,6 +12,7 @@ const init = () => {
   };
 };
 
+const valorInicial=[]
 function Provider({ children }) {
   const [logueado, dispatch] = useReducer(miReducer, {}, init);
 
@@ -32,8 +34,13 @@ function Provider({ children }) {
     dispatch(action);
   };
 
+
+
+
+const [venta, dispatch1] = useReducer(miReducer2,valorInicial);
+
   const [ciudades,setCiudades]=useState(datos);
-  const [saldo,setSaldo]=useState(0);
+ 
 
   return (
     <>
@@ -44,7 +51,8 @@ function Provider({ children }) {
           desloguearme,
           ciudades,
           setCiudades,
-          saldo,setSaldo,
+          venta,
+          dispatch1
         }}
       >
         {children}

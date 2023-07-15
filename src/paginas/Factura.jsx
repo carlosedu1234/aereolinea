@@ -1,13 +1,19 @@
-import React, { useContext } from 'react'
-import Contexto from '../context/Contexto'
+import React, { useContext } from "react";
+import Contexto from "../context/Contexto";
 
 function Factura() {
-    const {saldo}=useContext(Contexto)
+  const { venta } = useContext(Contexto);
+
   return (
     <div>
-      <h1>{saldo}</h1>
+      <h3>Lugares a visitar</h3>
+      {venta.map((datos) => 
+      <div key={datos.ciudad}>{datos.ciudad} {datos.precio}
+      <button>Cancelar</button></div>
+      )}
+      
     </div>
-  )
+  );
 }
 
-export default Factura
+export default Factura;

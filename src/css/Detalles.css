@@ -1,29 +1,61 @@
 .detalles-conteiner {
-  width: 50%;
+  width: 40%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em;
-  background: linear-gradient(rgb(0, 0, 255,0.1),rgba(168, 147, 147, 0.1));
-  box-shadow: 10px 10px 10px rgb(0, 0, 0,0.2);
- 
+  background: linear-gradient(rgb(0, 0, 255, 0.1), rgba(168, 147, 147, 0.1));
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
 }
 
+.detalles-conteiner p {
+  padding: 0em 2em;
+  box-sizing: border-box;
+}
 .boton-detalles {
   border: none;
   width: 40%;
-  background: rgb(38, 211, 38,0.3);
+  background: rgb(38, 211, 38, 0.3);
 }
 .boton-detalles:hover {
-    background: rgb(38, 211, 38,0.6);
+  background: rgb(38, 211, 38, 0.6);
 }
 
-.boton-cancelar{
-    border: none;
-    width: 40%;
-    background: rgba(255, 18, 1, 0.5);
+.boton-cancelar {
+  border: none;
+  width: 40%;
 }
 
+.boton-cancelar:hover {
+  background: rgba(255, 18, 1, 0.5);
+}
+.imagen-conteiner {
+  width: 100%;
+}
+.imagen-conteiner img {
+  height: 30%;
+  width: 100%;
+}
 
+.imagen-conteiner p {
+  position: absolute;
+  top: 7.2%;
+  color: white;
+  left: 30%;
+  padding: 0.7em;
+  background: rgb(0, 0, 0, 0.5);
+}
+.boton-posicion {
+  position: absolute;
+  right: 30%;
+  color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.3);
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+.boton-posicion:hover{
+  transition: 1s;
+  background-color: rgba(255, 0, 0, 0.5);
+}

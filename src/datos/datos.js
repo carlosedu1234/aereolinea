@@ -52,7 +52,7 @@ const datos =[
     zona:"Es",
     descripcion:"Tierra fria",
     imagen:"pasto.jpg",
-    disponible:"true",
+    disponible:true,
     precio:500
 },
 
