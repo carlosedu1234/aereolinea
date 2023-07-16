@@ -1,5 +1,6 @@
 .detalles-conteiner {
   width: 40%;
+  padding-bottom: 1em;
   margin: auto;
   display: flex;
   justify-content: center;

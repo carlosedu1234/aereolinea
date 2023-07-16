@@ -3,5 +3,7 @@ const types = {
     logaut: 'logaut',
     vendido: 'vendido',
     cancelar: 'cancelar',
+    total:"total" 
+
 }
 export default types

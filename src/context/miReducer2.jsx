@@ -11,7 +11,7 @@ function miReducer2(state = [], action) {
 
     case types.cancelar:
       return state.filter(datos=>datos.ciudad!==action.payload.ciudad);
-
+      
     default:
       return state;
   }

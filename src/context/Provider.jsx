@@ -1,8 +1,8 @@
-import React, { useReducer,useState } from "react";
+import React, { useReducer, useState } from "react";
 import Contexto from "./Contexto";
 import miReducer from "./miReducer.jsx";
 import types from "./types";
-import datos from "../datos/datos.js"
+import datos from "../datos/datos.js";
 import miReducer2 from "./miReducer2";
 
 const init = () => {
@@ -12,18 +12,17 @@ const init = () => {
   };
 };
 
-const valorInicial=[]
+const valorInicial = [];
 function Provider({ children }) {
   const [logueado, dispatch] = useReducer(miReducer, {}, init);
 
   const loguearme = (user) => {
     const action = {
       type: types.login,
-      payload:user
+      payload: user,
     };
     localStorage.setItem("estado", true);
     dispatch(action);
-    
   };
 
   const desloguearme = () => {
@@ -34,13 +33,9 @@ function Provider({ children }) {
     dispatch(action);
   };
 
-
-
-
-const [venta, dispatch1] = useReducer(miReducer2,valorInicial);
-
-  const [ciudades,setCiudades]=useState(datos);
- 
+  const [venta, dispatch1] = useReducer(miReducer2, valorInicial);
+  const [total, setTotal] = useState(0);
+  const [ciudades, setCiudades] = useState(datos);
 
   return (
     <>
@@ -51,8 +46,8 @@ const [venta, dispatch1] = useReducer(miReducer2,valorInicial);
           desloguearme,
           ciudades,
           setCiudades,
-          venta,
-          dispatch1
+          venta,dispatch1,
+          total,setTotal
         }}
       >
         {children}
