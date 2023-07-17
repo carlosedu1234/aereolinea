@@ -22,7 +22,7 @@ function Tarjetas({
       <h2>{ciudad}</h2>
       <p> {descripcion}</p>
       <img src={imagenUrl} alt="ciudad.png" />
-      <a className="boton-1" onClick={masDetalles}>Comprar</a>
+      <button className="boton-1" onClick={masDetalles}>Comprar</button>
     </div>
   );
 }

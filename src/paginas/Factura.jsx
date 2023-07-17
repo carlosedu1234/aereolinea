@@ -3,15 +3,16 @@ import Contexto from "../context/Contexto";
 import types from "../context/types";
 import "../css/facturacion.css"
 function Factura() {
-  const { venta, dispatch1,total,usuario } = useContext(Contexto);
+  const { venta, dispatch1,total,usuario,setTotal } = useContext(Contexto);
 
  
 
 
   const cancelar = (dato) => {
+    setTotal(total-dato.precio)
     const state = {
       type: types.cancelar,
-      payload: { ciudad: dato },
+      payload: { ciudad: dato.ciudad },
     };
     dispatch1(state);
   };
@@ -23,7 +24,7 @@ function Factura() {
       {venta.map((datos) => (
         <div className="conteiner-factura-datos" key={datos.ciudad}>
           {datos.ciudad}: (${datos.precio})
-          <button onClick={() => cancelar(datos.ciudad)} className="boton-cancelar-fac">Cancelar</button>
+          <button onClick={() => cancelar(datos)} className="boton-cancelar-fac">Cancelar</button>
         </div>
       ))}
       <h3>Nombre de Uuario:</h3>

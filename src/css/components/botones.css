@@ -4,6 +4,7 @@
     text-decoration: none;
     padding: 0.5em;
     color: black;
+    border: none;
     border-radius: 10px;
     background: rgba(255, 18, 1, 0.3);
     overflow: hidden;
