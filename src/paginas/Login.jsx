@@ -4,9 +4,9 @@ import "../css/components/login.css";
 import { useContext, useState } from "react";
 
 function Login() {
-  const { loguearme } = useContext(Contexto);
+  const { loguearme,usuario, setUsuario } = useContext(Contexto);
   const navegacion = useNavigate();
-  const [usuario, setUsuario] = useState("");
+  
   const [password, setPassword] = useState("");
 
   const recuperar = () => {

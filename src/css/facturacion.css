@@ -1,0 +1,38 @@
+.conteiner-factura {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 1em;
+  height: 70vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+  background: linear-gradient(rgb(0, 0, 255, 0.1), rgba(168, 147, 147, 0.1));
+}
+.conteiner-factura-datos{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boton-cancelar-fac {
+  padding: 0.4em;
+  margin-left: 1em;
+  margin-top: 0.6em;
+  border: none;
+  color: white;
+  background-color: rgb(255, 69, 0, 0.3);
+  border-radius: 10px;
+}
+
+.boton-cancelar-fac:hover {
+  transition: 1s;
+  background-color: rgb(255, 69, 0, 0.5);
+}
+
+.conteiner-factura p{
+    font-weight: 200;
+    font-size: 1.2em;
+}

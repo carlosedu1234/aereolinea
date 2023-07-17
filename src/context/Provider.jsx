@@ -36,6 +36,7 @@ function Provider({ children }) {
   const [venta, dispatch1] = useReducer(miReducer2, valorInicial);
   const [total, setTotal] = useState(0);
   const [ciudades, setCiudades] = useState(datos);
+  const [usuario, setUsuario] = useState("");
 
   return (
     <>
@@ -47,7 +48,8 @@ function Provider({ children }) {
           ciudades,
           setCiudades,
           venta,dispatch1,
-          total,setTotal
+          total,setTotal,
+          usuario, setUsuario
         }}
       >
         {children}
