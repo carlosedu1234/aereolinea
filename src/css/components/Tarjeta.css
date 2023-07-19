@@ -30,3 +30,17 @@ h2{
   margin-bottom: 1em;
 }
 
+
+.conteiner-circulo{
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+}
+
+.circulo{
+  height: 1.5em;
+  width: 1.5em;
+  background: green;
+  border-radius: 50%;
+}

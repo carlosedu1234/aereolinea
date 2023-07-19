@@ -19,7 +19,7 @@ function Provider({ children }) {
   const loguearme = (user) => {
     const action = {
       type: types.login,
-      payload: user,
+      payload: {name:user},
     };
     localStorage.setItem("estado", true);
     dispatch(action);

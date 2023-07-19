@@ -8,7 +8,7 @@ const MiReducer = (state = {}, action) => {
             return {
 
                 estado:true,
-                usuario:action.payload
+                usuario:action.payload.name
             }
 
         case types.logaut:

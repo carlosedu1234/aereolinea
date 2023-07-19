@@ -13,7 +13,8 @@ function Login() {
     navegacion("/", { replace: true });
 
     if (usuario !== "" && password !== "") {
-      loguearme("jab");
+      loguearme(usuario);
+
     } else {
       alert("Debes ingresar usuario y contraseña");
     }

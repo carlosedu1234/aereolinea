@@ -5,9 +5,6 @@ import "../css/facturacion.css"
 function Factura() {
   const { venta, dispatch1,total,usuario,setTotal } = useContext(Contexto);
 
- 
-
-
   const cancelar = (dato) => {
     setTotal(total-dato.precio)
     const state = {

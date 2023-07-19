@@ -16,3 +16,11 @@
       background: rgba(255, 18, 1, 0.5);
   }
 
+  .boton-modificar{
+    background: rgba(20, 208, 67, 0.3);
+
+  }
+  .boton-modificar:hover{
+    background: rgba(20, 208, 67, 0.5);
+
+  }
