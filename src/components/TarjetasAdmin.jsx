@@ -10,7 +10,6 @@ function TarjetasAdmin({
   imagen = "../img/bogota.jpg",
 }) {
   const { ciudades, setCiudades } = useContext(Contexto);
-  const imagenUrl = `${process.env.PUBLIC_URL}/img/${imagen}`;
   const ciudadDelete = ciudades.filter((dato) => dato.ciudad !== ciudad);
 
   
@@ -25,7 +24,7 @@ function TarjetasAdmin({
     <div className="ciudades-Tarjeta">
       <h2>{ciudad}</h2>
       <p> {descripcion}</p>
-      <img src={imagenUrl} alt="ciudad.png" />
+      <img src={imagen} alt="ciudad.png" />
       <div className="conteiner-circulo">
         <button className="boton-1" onClick={eliminar}
         >

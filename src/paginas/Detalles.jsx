@@ -34,7 +34,7 @@ function Detalles() {
     dispatch1(action);
   };
 
-  const imagen = `${process.env.PUBLIC_URL}/img/${ciudad.imagen}`;
+  const imagen = ciudad.imagen;
 
   return (
     <div className="detalles-conteiner">

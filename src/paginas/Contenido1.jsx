@@ -10,7 +10,7 @@ function Contenido1() {
       {ciudades.map((datos) => (
         <Tarjetas key={datos.ciudad} {...datos} />
       ))}
-      <Tarjetas titulo="Bogota" descripcion="Capital de colombia" />
+      
     </div>
   );
 }

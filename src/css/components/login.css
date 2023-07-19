@@ -22,6 +22,11 @@
   font-size: 1em;
   border: none ;
   border-bottom: solid rgba(81, 81, 87, 0.276);
+  
+}
+
+.login-ingreso::placeholder{
+  color: rgb(132, 132, 130,0.5);
 }
 
 .login-boton {
@@ -30,11 +35,20 @@
   border: none;
   font-size: 1em;
   background-color: rgba(0, 213, 255, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .login-boton:hover{
 
-transition: 1s;
-transform: scale(1.03);
-background-color: rgba(0, 213, 255, 0.3);
+transition: 0.5s;
+background-color: rgba(0, 213, 255, 0.5);
+}
+
+.login-boton:active{
+  transition: transform 0.2s;
+  transform: translateY(2px);
+  box-shadow: none;
 }

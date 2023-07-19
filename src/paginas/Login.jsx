@@ -8,6 +8,10 @@ function Login() {
   const navegacion = useNavigate();
   
   const [password, setPassword] = useState("");
+  const admin=()=>{
+    setUsuario("administrador")
+    loguearme(usuario);
+  }
 
   const recuperar = () => {
     navegacion("/", { replace: true });
@@ -39,6 +43,10 @@ function Login() {
         />
         <button type="submit" className="login-boton" onClick={recuperar}>
           Ingresar
+        </button>
+
+        <button type="submit" className="login-boton" onClick={admin}>
+          admin
         </button>
       </form>
     </div>
