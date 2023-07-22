@@ -17,7 +17,7 @@ function Login() {
 
     } else {
       alert("usuario se puede cualquiera");
-      alert("Para administrador usuario es: admninistrador");
+      alert("Para administrador usuario es: administrador");
     }
   };
   return (
