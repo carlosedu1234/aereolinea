@@ -14,7 +14,7 @@ function Router3() {
         <Route path='registroexitoso' element={<RegistroExitoso/>}/>
         <Route path="moduloprincipal" element={ <ModuloPrincipal/>}/>
         <Route path="agregardestino" element={ <AgregarDestino/>}/>
-        <Route path="modificaadmin" element={ <ModificarAdmin/>}/>
+        <Route path="modificaadmin/:nombre" element={ <ModificarAdmin/>}/>
         <Route path="/" element={<Navigate to="moduloprincipal" />} />
     </Routes>
     </div>

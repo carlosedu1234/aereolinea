@@ -14,6 +14,7 @@ function TarjetasAdmin({
 
   
   const navegacion=useNavigate();
+
   const eliminar = () => {
      setCiudades(ciudadDelete);
    
@@ -32,7 +33,7 @@ function TarjetasAdmin({
         </button>
         <button
           className="boton-1 boton-modificar"
-          onClick={()=>navegacion("/modificaadmin",{replace:false})}
+          onClick={()=>navegacion(`/modificaadmin/${ciudad}`,{replace:false})}
         >
           Modificar
         </button>

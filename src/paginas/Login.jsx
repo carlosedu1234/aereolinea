@@ -8,10 +8,6 @@ function Login() {
   const navegacion = useNavigate();
   
   const [password, setPassword] = useState("");
-  const admin=()=>{
-    setUsuario("administrador")
-    loguearme(usuario);
-  }
 
   const recuperar = () => {
     navegacion("/", { replace: true });
@@ -20,11 +16,13 @@ function Login() {
       loguearme(usuario);
 
     } else {
-      alert("Debes ingresar usuario y contraseña");
+      alert("usuario se puede cualquiera");
+      alert("Para administrador usuario es: admninistrador");
     }
   };
   return (
     <div className="login-oconteiner fondo-color">
+    
       <form action="" className="login-oconteiner login-oconteiner-form">
         <h1>Login</h1>
         <input
@@ -45,9 +43,7 @@ function Login() {
           Ingresar
         </button>
 
-        <button type="submit" className="login-boton" onClick={admin}>
-          admin
-        </button>
+     
       </form>
     </div>
   );
