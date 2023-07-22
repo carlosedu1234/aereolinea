@@ -44,7 +44,7 @@ function ModificarAdmin() {
     };
   
     const validarExistente = (nombre) => {
-      const existe = ciudades.find((dato) => dato.ciudad === nombre);
+      const existe = modificar.find((dato) => dato.ciudad === nombre);
       return !existe;
     };
     return (
