@@ -5,11 +5,11 @@ import "../css/agregarDatos.css";
 import Contexto from "../context/Contexto";
 import { useNavigate } from "react-router-dom";
 import datosAgregar from "../datos/ciudadEstructura";
-
+import {listaCiudades} from "../controllers/service-ciudades.js"
 
 function AgregarDestino() {
 
-
+ 
 
   const navegacion = useNavigate();
 
@@ -30,6 +30,7 @@ function AgregarDestino() {
     datosAgregar.imagen = data.imagen;
     datosAgregar.precio = parseInt(data.precio);
     setCiudades(agregarCiudad);
+    listaCiudades.useRegistrarCliente(agregarCiudad);
     navegacion("/registroexitoso", { replace: false });
   };
 

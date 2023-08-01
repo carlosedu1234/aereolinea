@@ -4,6 +4,7 @@ import Tarjetas from "../components/Tarjetas.jsx";
 import Contexto from "../context/Contexto";
 
 function Contenido1() {
+
   const { ciudades } = useContext(Contexto);
   return (
     <div className="ciudades-conteiner">
