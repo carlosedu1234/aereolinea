@@ -29,7 +29,7 @@ function TarjetasAdmin({
       <div className="conteiner-circulo">
         <button className="boton-1" onClick={eliminar}
         >
-          Eliminarpt
+          Eliminar
         </button>
         <button
           className="boton-1 boton-modificar"
